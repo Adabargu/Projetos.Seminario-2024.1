@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mudar Imagem ao Clicar</title>
+</head>
+<body>
+  <img id="myImage" src="escudo-spfc.avif" alt="Imagem 1" width="400" height="300">
+  <br>
+  <button onclick="mudarImagem1()">Imagem 1</button>
+  <button onclick="mudarImagem2()">Imagem 2</button>
+
+  <script>
+    var image = document.getElementById("myImage");
+    var imagem1 = "escudo-spfc.avif";
+    var imagem2 = "saopaulo_campeaomundial_2005_get_95.avif";
+
+    function mudarImagem1() {
+      image.src = imagem1;
+      image.alt = "Imagem 1";
+    }
+
+    function mudarImagem2() {
+      image.src = imagem2;
+      image.alt = "Imagem 2";
+    }
+  </script>
+</body>
+</html>
